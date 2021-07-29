@@ -21,15 +21,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit from common RevengeOS configuration
-$(call inherit-product, vendor/revengeos/config/common.mk)
-REVENGEOS_BUILDTYPE := OFFICIAL
+# Inherit from common ConquerOS configuration
+$(call inherit-product, vendor/conquer/config/common.mk)
+CONQUER_BUILD_TYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
-PRODUCT_NAME := revengeos_surya
+PRODUCT_NAME := conquer_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3
