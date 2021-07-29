@@ -28,4 +28,6 @@
     <dimen name="status_bar_padding_end">6dp</dimen>
     <dimen name="rounded_corner_content_padding">16dp</dimen>
 
+    <!-- Side padding on the lockscreen on the side of notifications -->
+    <dimen name="notification_side_paddings">15dp</dimen>
 </resources>
