@@ -125,12 +125,15 @@ void vendor_load_properties()
      */
     if (GetProperty("ro.boot.hwname", "") == "karna") { // POCO X3 (India)
         set_device_props("POCO", "karna", "M2007J20CI", "karna_in");
-        property_override("ro.product.mod_device", "surya_in_global");
         property_override("ro.conquer.device_name", "POCO X3");
     } else { // POCO X3 NFC
-        set_device_props("POCO", "surya", "M2007J20CG", "surya_global");
-        property_override("ro.product.mod_device", "surya_global");
-        property_override("ro.conquer.device_name", "POCO X3 NFC");
+        string hwc = GetProperty("ro.boot.hwc", "");
+        if (hwc == "THAI" || hwc == "THAI_PA") // POCO X3 NFC Thailand
+            set_device_props("POCO", "surya", "M2007J20CT", "surya_global");
+            property_override("ro.conquer.device_name", "POCO X3 NFC");
+        else // POCO X3 NFC Global
+            set_device_props("POCO", "surya", "M2007J20CG", "surya_global");
+            property_override("ro.conquer.device_name", "POCO X3 NFC");
     }
 
     load_dalvik_properties();
