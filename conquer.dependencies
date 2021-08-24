@@ -1,0 +1,22 @@
+[
+	{
+		"repository": "silont-project/kernel_xiaomi_surya",
+		"target_path": "kernel/xiaomi/surya",
+		"branch": "ayaka",
+                "remote": "github"
+	},
+	{
+		"repository": "vendor_xiaomi_surya",
+		"target_path": "vendor/xiaomi/surya",
+		"branch": "eleven"
+
+	},
+	{
+		"repository": "LineageOS/android_hardware_xiaomi",
+		"target_path": "hardware/xiaomi",
+		"branch": "lineage-18.1",
+		"remote": "github"
+
+	}
+
+]
