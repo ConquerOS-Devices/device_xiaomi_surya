@@ -1,8 +1,8 @@
 [
 	{
-		"repository": "silont-project/kernel_xiaomi_surya",
+		"repository": "rijak999/kernel_xiaomi_surya",
 		"target_path": "kernel/xiaomi/surya",
-		"branch": "ayaka",
+		"branch": "main-rebase",
                 "remote": "github"
 	},
 	{
